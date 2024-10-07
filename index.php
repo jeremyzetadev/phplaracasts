@@ -43,6 +43,8 @@
         $filteredBooks = filter($books,'releaseYear',2021);
 */
 
+/*
+        //php lambda function
         function filter($items,$fn){
             $filteredItems = [];
             foreach($items as $item){
@@ -56,11 +58,12 @@
         $filteredBooks = filter($books,function($book){
             return $book['releaseYear'] >= 2000;
         });
+*/
 
         //php function filter
-        //$filteredBooks = array_filter($books,function($book){
-        //    return $book['releaseYear'] >=2000;
-        //});
+        $filteredBooks = array_filter($books,function($book){
+            return $book['releaseYear'] >=2000;
+        });
     ?>
 
     <p>
