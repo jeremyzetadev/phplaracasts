@@ -125,7 +125,7 @@
   </header>
   <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <p>Hello this is Home Page!</p>
+        <p>You are now in contact page!</p>
     </div>
   </main>
 </div>
