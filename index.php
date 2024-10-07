@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Demo</title>
-</head>
-<body>
-    <h1>Recommended Books</h1>
-
-    <?php
+<?php
         $books = [
             [
                 'name'=>'Do Androids Dream of Electric Sheep',
@@ -64,16 +55,7 @@
         $filteredBooks = array_filter($books,function($book){
             return $book['releaseYear'] >=2000;
         });
-    ?>
+    
 
-    <p>
-        <?php foreach($filteredBooks as $book): ?>
-            <li>
-                <a href="<?=$book['purchaseUrl']?>">
-                    <?=$book['name'];?>
-                </a>
-            </li>
-        <?php endforeach; ?>
-    </p>
-</body>
-</html>
+        require "index.view.php";
+?>
